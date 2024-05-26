@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+      <style>
+        body, html {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      
+      .container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        overflow: auto; /* Make the main container scrollable */
+      }
+      
+      .image-container {
+        width: 400px;  /* Set fixed width for the image container */
+        overflow-y: auto; /* Allow vertical scrolling */
+        border: 3px solid rgb(167, 162, 162);
+         /* Add black border */
+      }
+      
+      .image-container img {
+        display: block;
+        margin: 9px auto;
+        cursor: pointer;
+        width: 100%; /* Make images fill container width */
+        height: auto; /* Maintain aspect ratio */
+      }
+      
+      .large-view {
+        flex: 1; /* Let large view occupy remaining horizontal space */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(175, 175, 175);
+         /* Add black border */
+        overflow: auto; /* Allow scrolling for iframe */
+      }
+      
+      .rightpanel {
+        border: none;
+        width: 90%; /* Adjust iframe width for better responsiveness */
+        height: 90%; /* Adjust iframe height for better responsiveness */
+      }
+      
+      
+        </style>
+    
+  </head>
+
+
+  <body>
+    <div class="container">
+      <div class="image-container" style="width: 20%;">
+        <p>Project 1 - Resume</p>
+        <hr />
+        <div>
+          <a
+            href="https://pankajkumardhal.github.io/HTML-CW1/"
+            target="rightpanel"
+          >
+            <img  src="./1.png" width="150%" height="150px"/>
+          </a>
+        </div>
+        <hr />
+        <br />
+        <p>Project 2 - Photo Cat App</p>
+        <hr />
+        <div>
+          <a
+            href="https://pankajkumardhal.github.io/htmlCW2/"
+            target="rightpanel"
+          >
+            <img src="./2.png" width="150%" height="150px"/>
+          </a>
+        </div>
+        <hr />
+        <br />
+        <p>Project 3 - Form</p>
+        <hr />
+        <div>
+          <a
+            href="https://pankajkumardhal.github.io/htmlCW3/"
+            target="rightpanel"
+          >
+            <img src="./3.png" width="100%" height="150px" alt="resume" />
+          </a>
+        </div>
+        <hr />
+        <br />
+        <p>Project 4 - Tribute Page</p>
+        <hr />
+        <div>
+          <a
+            href="https://pankajkumardhal.github.io/htmlCW4/"
+            target="rightpanel"
+          >
+            <img src="./4.png" width="100%" height="150px" alt="resume" />
+          </a>
+        </div>
+      </div> 
+      <div class="large-view">
+        <iframe
+        width="98%"
+        height="640vh"
+        name="rightpanel"
+        src="https://pankajkumardhal.github.io/HTML-CW1/"
+    
+      ></iframe>
+      </div>
+      
+    </div>
+  </body>
+</html>
